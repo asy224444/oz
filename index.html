@@ -12,16 +12,18 @@
 /*기본설정*/
 body,h1,h2,p{margin: 0;padding: 0;}
 h1,h2,p{color: white;}
-html{scroll-behavior: smooth;}
+
 p{word-break: keep-all; line-height: 2.5rem;}
 
 body{background: black;}
-.wrap{width: 1200px;margin: auto;}
+.wrap{width: 1000px;margin: auto;}
 body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-.diy{ font-family: 'KoHo', sans-serif;font-weight: 700;}
+
+h2{ font-family: 'KoHo', sans-serif; 
+	font-weight: 700;}
 
 
 /*인트로*/
@@ -29,7 +31,7 @@ body {
 .intro img{width: 100%; height: auto;}
 
 /*검정*/
-.black_{ padding-bottom: 400px; margin-top: 1250px; padding-top: 100px; background-color: black; width: 100%; position: relative; z-index: 3;height: 10000px;overflow-x: hidden;}
+.black_{ padding-bottom: 400px; margin-top: 1250px; padding-top: 100px; background-color: black; width: 100%; position: relative; z-index: 3;height: 2300px;overflow-x: hidden;overflow-y: hidden;}
 .black_{box-shadow: 0px 3px 1500px 40px #baff27; }
 .black_ h1{font-size: 3rem;text-align: center;}
 .black_ p {font-size: 2rem;text-align: center;
@@ -56,11 +58,126 @@ left: -1000px;
 width: 100%;
 top:1800px;
 right: -1000px}
-.o2{}
+
+.money {position: relative;background-color: black; background-color: black; width: 100%; z-index: 3;height: 1050px;display: flex;align-items:center}
+.money h1 {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  background-color: black;
+}
+
+.black__{background-color: black; width: 100%; position: relative; z-index: 3;height: 3150px;overflow-x: hidden;overflow-y: hidden;}
+
+ h1{font-size: 3rem;text-align: center;}
+p {font-size: 2rem;text-align: center;}
+
+.o2{position: relative;}
+.o2 h1{font-size: 2.5rem;padding-top:250px; text-align: left;}
+.o2 p{font-size:1.5rem;text-align: left;padding-top: 20px;}
+.o2img{width:110%;position: absolute; top:650px; left: 50%; transform: translate(-50%, -50%);}
+.o3{padding-top: 400px;}
+
+/*그레이*/
+.white {
+  
+  background-color: #F6F6F9; 
+  width: 100%; 
+  z-index: 3;
+  height: 3000px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.white h2 {
+  font-size: 12.55rem; 
+  text-align: left;
+  
+  font-weight:700;
+}
+
+.white:not(:hover) h2 {
+  letter-spacing: -7rem;
+}
+
+.white:hover h2 {
+  animation: stretch 1.1s ease-in-out; 
+}
+
+@keyframes stretch {
+  0% {
+    letter-spacing: -7rem;
+  }
+  
+  }
+  100% {
+    letter-spacing: 0rem;
+  }
+}
+.ozimg {
+  position: absolute;
+  margin: auto;
+}
+.white h1{font-size:3rem;font-weight:bold;color:black; } 
+.white p{color: black;}
+.tw{
+  display: inline-block;
+  background-color: #baff27;
+}
+.white .ozz{margin: 300px;}
+
+/*푸터*/
+.wrap-f {
+  width: 1200px;
+  margin: auto;}
+
+.warning{background-color: black; width: 100%; position: relative; z-index: 3;height: 1000px;overflow-x: hidden;overflow-y: hidden;}
+.warning h1 {
+  text-align: left;
+  margin-top: 100px;
+  font-size: 2.5rem;
+	color: black;
+font-weight: 900;}
+	.warning p {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 1.5rem;
+	color: white;
+	font-weight:700; }
 
 
+.warn-bg {
+  display: inline-block;
+  background-color: #baff27;
+  padding: 0 10px;}
+
+  @keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.warn-img {
+  position: absolute;
+
+  top: -100px;
+  right: -90px;
+  height: 100%;
+  z-index: 2;
+  animation: blink 2s linear infinite;
+}
 
 	</style>
+
 
 
 </head>
@@ -69,7 +186,7 @@ right: -1000px}
 		<img src="./intro.png">
 	</div>
 
-	<section class="black_"> 
+	<section class="black_" style="overflow: hidden;"> 
 		<div class="wrap">
 			<h1 class="wkwk" style="margin-top: 300px; font-size: 5rem;">WAKEY-WAKEY!
 			</h1>
@@ -95,37 +212,123 @@ right: -1000px}
 							</p>
 						</div>
 						
-				<div>
-					<h1 style="margin-top:700px; position: relative; z-index: 3;">
+			
+
+</div>
+	</section>
+
+	<section> 
+			<div class="money">
+					<h1>
 					이제 산소는 경제적 가치를 가집니다.
 					</h1>
 					<img src="./money.png" style="position: absolute;width: 100%;z-index: 1;">
-					<!-- 얘네가 겹쳐서 보이면 좋겠는데 어떻게 하는지 모르겠습니다 -->
+					
 					</div>
-				<div>
-					<p style="margin-top:1100px;margin-bottom: 400px;">
+	</section>
+
+	<section> 
+		<div class="black__">
+			<div class="wrap">
+					<p style="margin-top:100px;margin-bottom: 400px;">
 				따라서 이 세상에선 웃고 떠드는 것은 물론이고,<br>
 				산소를 소비하는 모든 행동은 사치가 되었죠.</p>
 				<h1 style="font-size:2.5rem ; ;">하지만...</h1>
 				<div class="diy">
-				<h2 style="margin-top:400px;">DO IT YOUR SELF!</h2>
+				<h2 style="margin-top:400px;font-weight:bold ;">DO IT YOUR SELF!</h2>
 				</div>
-				<div class="o2">
-					<h1>집에서 산소를 만들어 쓸 수 있다면 어떨까요?</h1>
+				
+					<div class="o2">
+						<h1>집에서 산소를 만들어 쓸 수 있다면 어떨까요?</h1>
+						<p>물이 산소와 수소로 이루어져 있다는 사실은<br> 
+							유치원생들도 아는 상식입니다.</p>
+							<img src="./o2.png" class="o2img">
+							<div class="o3">
+							<p style="text-align: right;">그리고 운 좋게도 아직 수도꼭지에서 물은 나오잖아요! 
+							<br>물론 수도세는 어마무시하지만...					</p>
+							
+
+
+	
+							<h1 style="text-align: right;padding-top: 20px;padding-bottom:20px ;">솔직히 숨 막혀 죽는 것보다야 낫죠!</h1>
+						
+					</div>
 				</div>
-
-</div>
-
-
+				<div class="wrap">
+					<h1 style="padding-top: 500px;">그래서..</h1>
+					<h1 style="padding-top: 300px;font-size: 5rem;font-weight: bold;">OZ를 소개합니다!</h1>
+				</div>
+	</section>
+	<section>
+		<div class="white">
 		
-	</section>
+				<h2>OZZZZZZZZZZZZZZ
+				</h2>
+	 
+				<img src="./oz.png" class="ozimg">
+			<div class="ozz">
+				<div class="wrap">
+					<div class="tw">
+					<h1 style=>
+						OZ는 산소메이커 입니다.
+					</h1>
+					</div>
+			<div class="wrap">
+				<p style="text-align:left;"> 물에서 산소를 분해해 호흡에 사용할 수 있게 해주죠.<br> 더 이상 숨을 아껴 쉴 필요는 없습니다!
+						</p>
+					</div>
+			</div>
+			<div class="ozz">
+				<div class="wrap">
+					<div class="tw">
+						<h1 style="text-align:left;">OZ는 친환경적입니다.</h1>
+					</div>
+					<div class="wrap">
+						<p style="text-align:left;">oz는 약간의 환경오염도 없이 산소를 생산할 방법을 찾아냈습니다. <br>(물론 2423년 개정안에 따르면 환경오염은 불법이지만요.)</p>
+					</div>
+				</div>
+				<div class="ozz">
+					<div class="wrap">
+					<div class="tw">
+					<h1 style=>
+						OZ는 효율적입니다.
+					</h1>
+					</div>
+			<div class="wrap">
+				<p style="text-align:left;"> 물에서 분리된 산소는 호흡에, 수소는 연료로 <br>사용되니 버리는 부분이 없죠.
+						</p>
+					</div>
+				</div>
 
-	<section> 
-		<div></div>
-	</section>
 
-	<section> 
-		<div></div>
+		</div>
 	</section>
+<section class="warning">
+<div class="warning_">
+  <div class="wrap-f">
+    <h1>
+      <div class="warn-bg">기기엔 반드시 깨끗한 물만 넣어주세요</div>
+    </h1>
+    <p>불순물은 기기 고장과 치명적인 사고를 유발합니다.</p>
+  </div>
+  <!-- 폭발에 주의하세요.  -->
+  <div class="wrap-f">
+    <h1>
+      <div class="warn-bg">폭발에 주의하세요.</div>
+    </h1>
+    <p>oz는 산소와 수소를 발생시키기 때문에 기기 근처에서 화기의 사용은<br> 철저히 금지됩니다.</p>
+  </div>
+  <div class="wrap-f">
+    <h1>
+      <div class="warn-bg">오늘 만들 산소를 내일로 미루지 마세요.</div>
+    </h1>
+    <p>내일도 살아 숨쉬고 싶다면 절대로 잊지 마십시오.</p>
+  </div>
+   <img src="warn.png"class="warn-img">
+
+</section>
+<footer style="color: #baff27;background-color: black;font-size: 1.2rem;text-align: center;">
+	copyright 2024. 안서연
+</footer>
 </body>
 </html>
